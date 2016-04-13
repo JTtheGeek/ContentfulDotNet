@@ -19,15 +19,13 @@ Also be aware if your field is a link to another content item, the value of the 
     var exampleContentTypeItems = await contentGateway.GetObjectsByContentType<ExampleContentType>("contentTypeId");
 
 ## Notes
-
 This is a first commit, it does work flawlessly in my projects, but I'm not pushing it too hard.  Here's a list of a things I think will need to be added
-    * support for queries where returned items > 100, currently assumes the request result contains all the items matching
-    * support for paginated queries
-    * rate limiting
-    * built in cache layer?
+* support for queries where returned items > 100, currently assumes the request result contains all the items matching
+* support for paginated queries
+* rate limiting
+* built in cache layer?
 
 
 
 ## License
-
 Free For All, no attribution required.
