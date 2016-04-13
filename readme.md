@@ -8,15 +8,15 @@ Create a simple class with properties that match your content type fields. Also 
 
 Also be aware if your field is a link to another content item, the value of the field will instead by the id of the referenced object.
 
-```public class ExampleContentType
-{
-    public String Id { get; set; }
-    public String Title { get; set; } 
-    public int Description { get; set; }
-}
+    public class ExampleContentType
+    {
+        public String Id { get; set; }
+        public String Title { get; set; } 
+        public int Description { get; set; }
+    }
 
-var contentGateway = await ContentfulGatewayFactory.GetGateway(contentfulApiKey, contentfulSpaceId);
-var exampleContentTypeItems = await contentGateway.GetObjectsByContentType<ExampleContentType>("contentTypeId");```
+    var contentGateway = await ContentfulGatewayFactory.GetGateway(contentfulApiKey, contentfulSpaceId);
+    var exampleContentTypeItems = await contentGateway.GetObjectsByContentType<ExampleContentType>("contentTypeId");
 
 ## Notes
 
